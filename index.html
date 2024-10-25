@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simulador de Batalha RPG</title>
+    <link rel="icon" type="image/png" href="espada.png"> <!-- favicon -->
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎮 Simulador de Batalha RPG 🎉</h1>
+        <div class="players">
+            <!-- Jogador 1 -->
+            <div id="player1" class="player">
+                <h2>Jogador 1</h2>
+                <img src="https://media.tenor.com/BU2modgehEgAAAAM/mug-shot-michael-jackson.gif"
+                    alt="Imagem do Jogador 1"> <!-- Imagem do jogador 1 -->
+                <div class="life" id="life1">❤️ 100</div>
+                <button onclick="ataque('player1', 'player2', 'Pancada')">👊 Pancada</button>
+                <button onclick="ataque('player1', 'player2', 'Chute')">🦵 Chute</button>
+                <button onclick="ataque('player1', 'player2', 'Ataque Especial')">✨ Ataque Especial</button>
+                <button onclick="defender('player1')">🛡️ Defender</button>
+            </div>
+
+            <!-- Jogador 2 -->
+            <div id="player2" class="player">
+                <h2>Jogador 2</h2>
+                <img src="https://e7.pngegg.com/pngimages/837/430/png-clipart-spider-man-green-goblin-supervillain-iron-man-green-goblin-superhero-villain-thumbnail.png"
+                    alt="Imagem do Jogador 2"> <!-- Imagem do jogador 2 -->
+                <div class="life" id="life2">❤️ 100</div>
+                <button onclick="ataque('player2', 'player1', 'Pancada')">👊 Pancada</button>
+                <button onclick="ataque('player2', 'player1', 'Chute')">🦵 Chute</button>
+                <button onclick="ataque('player2', 'player1', 'Ataque Especial')">✨ Ataque Especial</button>
+                <button onclick="defender('player2')">🛡️ Defender</button>
+            </div>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
